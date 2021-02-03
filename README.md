@@ -1,0 +1,1 @@
+Testing django study
