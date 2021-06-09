@@ -11,4 +11,4 @@ FROM pypy:slim-buster
 # RUN pip install -r requirements.txt
 # RUN rm -rf /root/.cache/pip
 RUN pip install django
-RUN pip freeze | grep django
+CMD ["python", "manage.py", "runserver"]
