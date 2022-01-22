@@ -4,7 +4,7 @@ FROM pypy:slim-buster
         gcc gettext \
         postgresql-client libpq-dev \
         sqlite3 \
-        nginx \ 
+        nginx \
         --no-install-recommends && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt ./
