@@ -7,7 +7,7 @@ FROM pypy:slim-buster
         nginx \
         --no-install-recommends && rm -rf /var/lib/apt/lists/*
 
-COPY requirements.txt ./
+# COPY requirements.txt ./
 # RUN pip install -r requirements.txt
 RUN rm -rf /root/.cache/pip
 RUN pip install django
