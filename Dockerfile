@@ -8,7 +8,7 @@ FROM pypy:slim-buster
         --no-install-recommends && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt ./
-RUN pip install -r requirements.txt
+# RUN pip install -r requirements.txt
 RUN rm -rf /root/.cache/pip
 RUN pip install django
 RUN mkdir /webapp
