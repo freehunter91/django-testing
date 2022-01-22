@@ -14,5 +14,5 @@ RUN pip install django
 RUN mkdir /webapp
 ADD firstProject /webapp
 WORKDIR /webapp
-EXPOSE 443
-CMD ["python", "manage.py", "runserver", "0.0.0.0:443"]
+EXPOSE 8000
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
